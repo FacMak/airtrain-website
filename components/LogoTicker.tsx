@@ -1,9 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { PARTNER_LOGOS, PARTNERS } from "@/lib/data";
+import { PARTNERS } from "@/lib/data";
 import { Reveal } from "./ui/Reveal";
-import { MediaFrame } from "./ui/MediaFrame";
 
 export function LogoTicker() {
   // Liste verdoppeln → nahtlose Endlosschleife bei x: -50%
@@ -20,7 +19,6 @@ export function LogoTicker() {
         </Reveal>
       </div>
 
-      {/* Text-Ticker */}
       <div className="mask-fade-x relative mt-10 overflow-hidden">
         <motion.div
           className="flex w-max items-center"
@@ -39,35 +37,6 @@ export function LogoTicker() {
             </div>
           ))}
         </motion.div>
-      </div>
-
-      {/* Logo-Bilderleiste — Platzhalter, bis echte Dateien unter /public/logos/ liegen */}
-      <div className="container-airtrain mt-12">
-        <Reveal className="mb-6 text-center">
-          <p className="text-xs font-medium uppercase tracking-[0.22em] text-muted">
-            Partner-Logos · echte Dateien unter{" "}
-            <code className="rounded bg-paper px-1.5 py-0.5 text-ink/70">
-              /public/logos/
-            </code>{" "}
-            ablegen
-          </p>
-        </Reveal>
-        <Reveal
-          className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6"
-          delay={0.1}
-        >
-          {PARTNER_LOGOS.map((logo) => (
-            <MediaFrame
-              key={logo.src}
-              src={logo.src}
-              alt={logo.alt}
-              label={logo.src.split("/").pop()}
-              fit="contain"
-              rounded="rounded-2xl"
-              className="aspect-[3/2] bg-paper transition-all duration-300 ease-aero hover:bg-paper-pure"
-            />
-          ))}
-        </Reveal>
       </div>
     </section>
   );

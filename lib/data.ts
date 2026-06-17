@@ -127,48 +127,6 @@ export const PARTNERS = [
   "Bombardier",
 ] as const;
 
-/** Kennzahlen & Kosten-Dashboard */
-export const KPIS = [
-  {
-    label: "Produktionskosten / Einheit",
-    value: 1850,
-    prefix: "€ ",
-    suffix: "",
-    sub: "in Serienfertigung",
-  },
-  {
-    label: "Entwicklung bis Serienreife",
-    value: 24,
-    prefix: "",
-    suffix: " Mon.",
-    sub: "Prototyp → Zertifizierung",
-  },
-  {
-    label: "Umsatzhebel Patentlizenzen",
-    value: 12.5,
-    prefix: "€ ",
-    suffix: " Mio.",
-    decimals: 1,
-    sub: "p. a. bei Markt-Roll-out",
-  },
-  {
-    label: "CO₂-Einsparung / Wagen",
-    value: 6.4,
-    prefix: "",
-    suffix: " t",
-    decimals: 1,
-    sub: "pro Jahr & Wagen",
-  },
-] as const;
-
-/** Kostenstruktur-Aufschlüsselung (für die Balken-Visualisierung) */
-export const COST_BREAKDOWN = [
-  { label: "Mechanik & Gehäuse", pct: 46 },
-  { label: "Luftführung & Filter", pct: 28 },
-  { label: "Sensorik & Steuerung", pct: 16 },
-  { label: "Montage & Integration", pct: 10 },
-] as const;
-
 export const CONTACT_ROLES = [
   "Eisenbahnverkehrsunternehmen (EVU)",
   "Schienenfahrzeughersteller (OEM)",
@@ -208,34 +166,3 @@ export const TECH_STEPS = [
   },
 ] as const;
 
-/**
- * Galerie-Platzhalter. Echte Fotos einfach unter /public/gallery/ mit
- * genau diesem Dateinamen ablegen — sie erscheinen dann automatisch.
- */
-export const GALLERY_ITEMS = [
-  { src: "/gallery/foto-1.jpg", alt: "AirTrain Außenansicht", label: "Foto hier ablegen · foto-1.jpg", span: "lg" as const },
-  { src: "/gallery/foto-2.jpg", alt: "AirTrain Innenraum", label: "Foto hier ablegen · foto-2.jpg", span: "sm" as const },
-  { src: "/gallery/foto-3.jpg", alt: "AirTrain Lüftungsmodul", label: "Foto hier ablegen · foto-3.jpg", span: "sm" as const },
-  { src: "/gallery/foto-4.jpg", alt: "AirTrain Detailaufnahme", label: "Foto hier ablegen · foto-4.jpg", span: "sm" as const },
-  { src: "/gallery/foto-5.jpg", alt: "AirTrain im Einsatz", label: "Foto hier ablegen · foto-5.jpg", span: "sm" as const },
-] as const;
-
-/**
- * Logo-Platzhalter. Echte Partner-Logos unter /public/logos/ mit genau
- * diesem Dateinamen ablegen (transparentes PNG/SVG empfohlen).
- */
-export const PARTNER_LOGOS = [
-  { src: "/logos/logo-1.png", alt: "Hier neues Logo einfügen" },
-  { src: "/logos/logo-2.png", alt: "Hier neues Logo einfügen" },
-  { src: "/logos/logo-3.png", alt: "Hier neues Logo einfügen" },
-  { src: "/logos/logo-4.png", alt: "Hier neues Logo einfügen" },
-  { src: "/logos/logo-5.png", alt: "Hier neues Logo einfügen" },
-  { src: "/logos/logo-6.png", alt: "Hier neues Logo einfügen" },
-] as const;
-
-/** Diagramm-Platzhalter für die Technologie-Sektion. */
-export const TECH_DIAGRAM = {
-  src: "/technologie/funktionsweise.png",
-  alt: "Schematische Funktionsweise des AirTrain-Systems",
-  label: "Funktions-Diagramm hier ablegen · funktionsweise.png",
-} as const;
