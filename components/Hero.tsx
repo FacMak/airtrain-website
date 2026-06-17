@@ -57,13 +57,28 @@ export function Hero() {
         style={{ y: contentY, opacity: contentOpacity }}
         className="container-airtrain relative pb-20 pt-36 sm:pt-40"
       >
+        {/* Eyebrow */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ ...spring, delay: 0.05 }}
+          className="mb-6 inline-flex items-center gap-2.5 rounded-full border border-white/15 bg-white/5 py-1.5 pl-2 pr-4 backdrop-blur-sm"
+        >
+          <span className="flex h-6 items-center rounded-full bg-airflow px-2.5 text-[0.65rem] font-bold uppercase tracking-wider text-ink">
+            Neu
+          </span>
+          <span className="text-sm font-medium text-paper/80">
+            Das fahrtwind-getriebene Klimasystem für den Schienenverkehr
+          </span>
+        </motion.div>
+
         {/* Slogan — typografisch dem Logo-Tagline nachempfunden:
             kursiv, mit feinen Rails-Linien links/rechts,
             Farbverlauf von hell → Airflow-Cyan. */}
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ ...spring, delay: 0.05 }}
+          transition={{ ...spring, delay: 0.15 }}
           className="mb-7 flex items-center gap-4"
         >
           <span className="h-px w-10 bg-accent-teal/60 sm:w-14" />
@@ -72,21 +87,6 @@ export function Hero() {
             <span className="text-airflow font-semibold">nicht mehr schwitzen.</span>
           </p>
           <span className="h-px w-10 bg-accent-teal/60 sm:w-14" />
-        </motion.div>
-
-        {/* Eyebrow */}
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ ...spring, delay: 0.15 }}
-          className="mb-7 inline-flex items-center gap-2.5 rounded-full border border-white/15 bg-white/5 py-1.5 pl-2 pr-4 backdrop-blur-sm"
-        >
-          <span className="flex h-6 items-center rounded-full bg-airflow px-2.5 text-[0.65rem] font-bold uppercase tracking-wider text-ink">
-            Neu
-          </span>
-          <span className="text-sm font-medium text-paper/80">
-            Das fahrtwind-getriebene Klimasystem für den Schienenverkehr
-          </span>
         </motion.div>
 
         {/* Headline — Wort für Wort */}
