@@ -16,10 +16,11 @@ const display = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Airtrain — Die Zugklimaanlage ohne Strom",
+  title: "AirTrain — Fahrtwind-Klimaanlage für Züge",
   description:
-    "Airtrain ist ein revolutionäres, fahrtwind-getriebenes Klima- und Ventilationssystem für Züge. Null Stromverbrauch, ausfallsicher, autark — entwickelt für EVUs und Schienenfahrzeughersteller.",
+    "AirTrain ist das fahrtwind-getriebene Klima- und Ventilationssystem für Züge — mit drastisch reduziertem Stromverbrauch gegenüber konventioneller HVAC. Entwickelt für EVUs und Schienenfahrzeughersteller.",
   keywords: [
+    "AirTrain",
     "Zugklimaanlage",
     "Fahrtwind",
     "Schienenverkehr",
@@ -28,9 +29,9 @@ export const metadata: Metadata = {
     "B2B",
   ],
   openGraph: {
-    title: "Airtrain — Die Zugklimaanlage ohne Strom",
+    title: "AirTrain — Fahrtwind-Klimaanlage für Züge",
     description:
-      "Fahrtwind-getriebene Klimatisierung für den Schienenverkehr. Null Strom, ausfallsicher, autark.",
+      "Fahrtwind-getriebene Klimatisierung für den Schienenverkehr. Deutlich weniger Stromverbrauch, ausfallsicher, wartungsarm.",
     type: "website",
     locale: "de_AT",
   },

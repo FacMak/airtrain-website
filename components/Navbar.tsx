@@ -50,7 +50,7 @@ export function Navbar() {
               scrolled ? "text-ink" : "text-paper"
             }`}
           >
-            Airtrain
+            AirTrain
           </span>
         </a>
 

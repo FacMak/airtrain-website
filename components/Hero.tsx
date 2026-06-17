@@ -69,7 +69,7 @@ export function Hero() {
             Neu
           </span>
           <span className="text-sm font-medium text-paper/80">
-            Fahrtwind-getriebenes Klimasystem für den Schienenverkehr
+            Das fahrtwind-getriebene Klimasystem für den Schienenverkehr
           </span>
         </motion.div>
 
@@ -113,13 +113,13 @@ export function Hero() {
               <ArrowRightIcon className="h-5 w-5 transition-transform duration-300 ease-aero group-hover:translate-x-1" />
             </motion.a>
             <motion.a
-              href="#loesung"
+              href="#technologie"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.98 }}
               transition={springSnappy}
               className="inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/5 px-6 py-3.5 text-base font-semibold text-paper backdrop-blur-sm transition-colors hover:bg-white/10"
             >
-              Technologie entdecken
+              So funktioniert AirTrain
             </motion.a>
           </div>
         </motion.div>

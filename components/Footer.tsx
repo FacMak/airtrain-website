@@ -12,12 +12,12 @@ export function Footer() {
                 <TrainIcon className="h-5 w-5" />
               </span>
               <span className="text-lg font-semibold tracking-tight">
-                Airtrain
+                AirTrain
               </span>
             </div>
             <p className="mt-4 text-sm leading-relaxed text-muted">
-              Die Zugklimaanlage ohne Strom — angetrieben vom Fahrtwind der
-              Zukunft. Energieeffizient, ausfallsicher, autark.
+              Die Zugklimaanlage, angetrieben vom Fahrtwind. Drastisch
+              reduzierter Stromverbrauch, ausfallsicher, wartungsarm.
             </p>
           </div>
 
@@ -35,7 +35,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col items-start justify-between gap-4 border-t border-line pt-6 text-sm text-muted sm:flex-row sm:items-center">
-          <p>© {new Date().getFullYear()} Airtrain Technologies. Alle Rechte vorbehalten.</p>
+          <p>© {new Date().getFullYear()} AirTrain Technologies. Alle Rechte vorbehalten.</p>
           <div className="flex gap-6">
             <a href="#" className="transition-colors hover:text-ink">Impressum</a>
             <a href="#" className="transition-colors hover:text-ink">Datenschutz</a>

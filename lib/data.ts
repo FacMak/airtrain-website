@@ -7,7 +7,7 @@ export const NAV_LINKS = [
   { label: "Technologie", href: "#technologie" },
   { label: "Lösung", href: "#loesung" },
   { label: "Vorteile", href: "#vorteile" },
-  { label: "Partner", href: "#partner" },
+  { label: "Galerie", href: "#galerie" },
   { label: "Kennzahlen", href: "#kennzahlen" },
   { label: "Kontakt", href: "#kontakt" },
 ] as const;
