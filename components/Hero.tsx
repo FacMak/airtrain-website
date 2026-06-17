@@ -64,14 +64,14 @@ export function Hero() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ ...spring, delay: 0.05 }}
-          className="mb-6 flex items-center gap-3"
+          className="mb-7 flex items-center gap-4"
         >
-          <span className="h-px w-8 bg-accent-teal/60" />
-          <p className="font-display text-base italic tracking-tight sm:text-lg">
+          <span className="h-px w-10 bg-accent-teal/60 sm:w-14" />
+          <p className="font-display text-2xl italic tracking-tight sm:text-3xl lg:text-4xl">
             <span className="text-paper">Im AirTrain sitzen –</span>{" "}
             <span className="text-airflow font-semibold">nicht mehr schwitzen.</span>
           </p>
-          <span className="h-px w-8 bg-accent-teal/60" />
+          <span className="h-px w-10 bg-accent-teal/60 sm:w-14" />
         </motion.div>
 
         {/* Eyebrow */}
