@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --paper: #f5f8fb;
+  --ink: #070b14;
+  --accent: #06b6d4;
+  --accent-teal: #2dd4bf;
+}
+
+@layer base {
+  * {
+    @apply border-line;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-paper text-ink font-sans antialiased;
+    font-feature-settings: "ss01", "cv01", "cv03";
+  }
+
+  ::selection {
+    background-color: rgba(6, 182, 212, 0.22);
+    color: #06212a;
+  }
+
+  /* Reduced motion: respect user preference, kill all the choreography */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* Layout container with precise, generous gutters */
+  .container-airtrain {
+    @apply mx-auto w-full max-w-7xl px-6 sm:px-8 lg:px-12;
+  }
+
+  /* Eyebrow / kicker label */
+  .kicker {
+    @apply inline-flex items-center gap-2 text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-accent-deep;
+  }
+
+  /* Fine hairline grid texture for backgrounds */
+  .grid-texture {
+    background-image:
+      linear-gradient(to right, rgba(7, 11, 20, 0.04) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(7, 11, 20, 0.04) 1px, transparent 1px);
+    background-size: 64px 64px;
+  }
+
+  .grid-texture-dark {
+    background-image:
+      linear-gradient(to right, rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+    background-size: 64px 64px;
+  }
+
+  /* Gradient text helper */
+  .text-airflow {
+    @apply bg-airflow bg-clip-text text-transparent;
+  }
+
+  /* Edge-fade mask for the logo ticker */
+  .mask-fade-x {
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 12%,
+      black 88%,
+      transparent
+    );
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 12%,
+      black 88%,
+      transparent
+    );
+  }
+}
+
+@layer utilities {
+  .tnum {
+    font-variant-numeric: tabular-nums;
+  }
+  .text-balance {
+    text-wrap: balance;
+  }
+}
