@@ -1,5 +1,5 @@
+import Image from "next/image";
 import { NAV_LINKS } from "@/lib/data";
-import { TrainIcon } from "./ui/Icons";
 
 export function Footer() {
   return (
@@ -7,15 +7,14 @@ export function Footer() {
       <div className="container-airtrain py-14">
         <div className="flex flex-col justify-between gap-10 lg:flex-row">
           <div className="max-w-sm">
-            <div className="flex items-center gap-2.5">
-              <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-ink text-paper-pure">
-                <TrainIcon className="h-5 w-5" />
-              </span>
-              <span className="text-lg font-semibold tracking-tight">
-                AirTrain
-              </span>
-            </div>
-            <p className="mt-4 text-sm leading-relaxed text-muted">
+            <Image
+              src="/logo/airtrain-logo.png"
+              alt="AirTrain"
+              width={1620}
+              height={1080}
+              className="h-16 w-auto sm:h-20"
+            />
+            <p className="mt-5 text-sm leading-relaxed text-muted">
               Die Zugklimaanlage, angetrieben vom Fahrtwind. Drastisch
               reduzierter Stromverbrauch, ausfallsicher, wartungsarm.
             </p>
