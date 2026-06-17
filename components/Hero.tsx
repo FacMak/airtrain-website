@@ -2,7 +2,6 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import { HERO_STATS } from "@/lib/data";
 import { spring, springSnappy, staggerContainer, wordReveal } from "@/lib/motion";
 import { ArrowRightIcon } from "./ui/Icons";
 
@@ -124,28 +123,6 @@ export function Hero() {
           </div>
         </motion.div>
 
-        {/* Key-Stats mit Stagger */}
-        <motion.dl
-          variants={staggerContainer(0.12, 1.4)}
-          initial="hidden"
-          animate="visible"
-          className="mt-16 grid max-w-2xl grid-cols-1 gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] sm:grid-cols-3"
-        >
-          {HERO_STATS.map((stat) => (
-            <motion.div
-              key={stat.label}
-              variants={wordReveal}
-              className="bg-ink/40 p-5"
-            >
-              <dt className="font-display text-3xl font-semibold tracking-tight text-airflow">
-                {stat.value}
-              </dt>
-              <dd className="mt-1 text-sm leading-snug text-paper/60">
-                {stat.label}
-              </dd>
-            </motion.div>
-          ))}
-        </motion.dl>
       </motion.div>
 
       {/* Scroll-Hinweis */}

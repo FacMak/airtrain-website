@@ -1,11 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { TECH_DIAGRAM, TECH_STEPS } from "@/lib/data";
+import { TECH_STEPS } from "@/lib/data";
 import { fadeUp, inViewProps, spring, staggerContainer } from "@/lib/motion";
 import { ICONS } from "./ui/Icons";
-import { MediaFrame } from "./ui/MediaFrame";
 import { Reveal } from "./ui/Reveal";
+import { TechDiagram } from "./ui/TechDiagram";
 
 /**
  * Die Hauptbühne für das Kernelement: das AirTrain-System selbst.
@@ -35,19 +35,13 @@ export function Technology() {
           </p>
         </Reveal>
 
-        {/* Diagramm im großen Glow-Frame */}
+        {/* Funktions-Diagramm im großen Glow-Frame */}
         <Reveal className="mt-14" delay={0.1}>
           <div className="relative mx-auto max-w-5xl">
             <div className="absolute -inset-4 -z-10 rounded-[2.5rem] bg-airflow opacity-25 blur-2xl" />
-            <MediaFrame
-              src={TECH_DIAGRAM.src}
-              alt={TECH_DIAGRAM.alt}
-              label={TECH_DIAGRAM.label}
-              variant="dark"
-              fit="contain"
-              rounded="rounded-4xl"
-              className="aspect-[16/9] border border-white/10 bg-paper-pure/[0.04] shadow-lift"
-            />
+            <figure className="relative overflow-hidden rounded-4xl border border-white/10 bg-paper-pure shadow-lift">
+              <TechDiagram />
+            </figure>
             <p className="mt-3 text-center text-xs uppercase tracking-[0.22em] text-paper/40">
               Schema · Luftweg im Wagenkasten
             </p>

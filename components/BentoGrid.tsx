@@ -71,22 +71,6 @@ function BentoCard({ usp }: { usp: (typeof USPS)[number] }) {
         >
           <Icon className="h-6 w-6" />
         </span>
-        <div className="text-right">
-          <div
-            className={`font-display font-semibold tracking-tight ${
-              feature ? "text-4xl text-airflow" : "text-2xl"
-            }`}
-          >
-            {usp.metric}
-          </div>
-          <div
-            className={`text-xs font-medium uppercase tracking-wider ${
-              feature ? "text-paper/45" : "text-muted"
-            }`}
-          >
-            {usp.metricLabel}
-          </div>
-        </div>
       </div>
 
       <div className="relative mt-6">
