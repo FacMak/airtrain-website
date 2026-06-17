@@ -57,6 +57,23 @@ export function Hero() {
         style={{ y: contentY, opacity: contentOpacity }}
         className="container-airtrain relative pb-20 pt-36 sm:pt-40"
       >
+        {/* Slogan — typografisch dem Logo-Tagline nachempfunden:
+            kursiv, mit feinen Rails-Linien links/rechts,
+            Farbverlauf von hell → Airflow-Cyan. */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ ...spring, delay: 0.05 }}
+          className="mb-6 flex items-center gap-3"
+        >
+          <span className="h-px w-8 bg-accent-teal/60" />
+          <p className="font-display text-base italic tracking-tight sm:text-lg">
+            <span className="text-paper">Im AirTrain sitzen –</span>{" "}
+            <span className="text-airflow font-semibold">nicht mehr schwitzen.</span>
+          </p>
+          <span className="h-px w-8 bg-accent-teal/60" />
+        </motion.div>
+
         {/* Eyebrow */}
         <motion.div
           initial={{ opacity: 0, y: 16 }}

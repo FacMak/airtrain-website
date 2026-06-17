@@ -37,23 +37,22 @@ export function Navbar() {
             : "border-white/10 bg-ink/[0.03]"
         }`}
       >
-        {/* Wordmark — echtes AirTrain-Logo, auf weißem Pill mit Crop auf
-            Train + AIRTRAIN (rails & Tagline werden für die kleine Nav-Größe
-            unten weggeschnitten — sonst zu wenig lesbar). */}
+        {/* Wordmark — vollständiges AirTrain-Logo auf weißem Pill,
+            inkl. Rails & Tagline. */}
         <a
           href="#top"
           aria-label="AirTrain – zur Startseite"
-          className={`relative flex h-10 w-[112px] shrink-0 items-center justify-center overflow-hidden rounded-xl bg-paper-pure px-2 transition-shadow duration-500 sm:h-11 sm:w-[124px] ${
+          className={`flex shrink-0 items-center justify-center rounded-xl bg-paper-pure px-2.5 py-1.5 transition-shadow duration-500 ${
             scrolled ? "shadow-none" : "shadow-soft"
           }`}
         >
           <Image
             src="/logo/airtrain-logo.png"
-            alt="AirTrain"
-            fill
+            alt="AirTrain – Im AirTrain sitzen, nicht mehr schwitzen"
+            width={1620}
+            height={1080}
             priority
-            sizes="124px"
-            style={{ objectFit: "cover", objectPosition: "center 22%" }}
+            className="block h-12 w-auto sm:h-14"
           />
         </a>
 
