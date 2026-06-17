@@ -7,7 +7,6 @@ export const NAV_LINKS = [
   { label: "Technologie", href: "#technologie" },
   { label: "Lösung", href: "#loesung" },
   { label: "Vorteile", href: "#vorteile" },
-  { label: "Partner", href: "#partner" },
   { label: "Kontakt", href: "#kontakt" },
 ] as const;
 
@@ -113,18 +112,6 @@ export const USPS = [
     span: "md" as const,
     icon: "wind",
   },
-] as const;
-
-/** Strategisches Ökosystem — Partner & Referenz-Pipeline */
-export const PARTNERS = [
-  "ÖBB",
-  "Siemens Mobility",
-  "Stadler",
-  "Alstom",
-  "Liebherr",
-  "TU Wien",
-  "Deutsche Bahn",
-  "Bombardier",
 ] as const;
 
 export const CONTACT_ROLES = [

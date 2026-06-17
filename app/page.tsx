@@ -3,7 +3,6 @@ import { Hero } from "@/components/Hero";
 import { Technology } from "@/components/Technology";
 import { ProblemSolution } from "@/components/ProblemSolution";
 import { BentoGrid } from "@/components/BentoGrid";
-import { LogoTicker } from "@/components/LogoTicker";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 
@@ -17,7 +16,6 @@ export default function Home() {
         <Technology />
         <ProblemSolution />
         <BentoGrid />
-        <LogoTicker />
         <Contact />
       </main>
       <Footer />
