@@ -6,9 +6,3 @@
 .DS_Store
 .env*.local
 next-env.d.ts
-
-# Aus dem Chat ins Projekt-Root gepastete Hilfsbilder.
-# Echte Assets gehören unter /public/.
-/info_*.png
-/info_*.jpg
-/info_*.jpeg

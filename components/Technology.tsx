@@ -1,11 +1,11 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { TECH_STEPS } from "@/lib/data";
 import { fadeUp, inViewProps, spring, staggerContainer } from "@/lib/motion";
 import { ICONS } from "./ui/Icons";
 import { Reveal } from "./ui/Reveal";
-import { TechDiagram } from "./ui/TechDiagram";
 
 /**
  * Die Hauptbühne für das Kernelement: das AirTrain-System selbst.
@@ -40,7 +40,14 @@ export function Technology() {
           <div className="relative mx-auto max-w-5xl">
             <div className="absolute -inset-4 -z-10 rounded-[2.5rem] bg-airflow opacity-25 blur-2xl" />
             <figure className="relative overflow-hidden rounded-4xl border border-white/10 bg-paper-pure shadow-lift">
-              <TechDiagram />
+              <Image
+                src="/technologie/funktionsweise.png"
+                alt="Funktionsweise des AirTrain-Systems: Frischluftzufuhr, Ventilatoren, Filter, Wagonwand und Abluft"
+                width={1455}
+                height={736}
+                priority
+                className="block h-auto w-full"
+              />
             </figure>
             <p className="mt-3 text-center text-xs uppercase tracking-[0.22em] text-paper/40">
               Schema · Luftweg im Wagenkasten
