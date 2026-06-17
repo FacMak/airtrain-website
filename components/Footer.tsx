@@ -14,10 +14,6 @@ export function Footer() {
               height={1080}
               className="h-16 w-auto sm:h-20"
             />
-            <p className="mt-5 text-sm leading-relaxed text-muted">
-              Die Zugklimaanlage, angetrieben vom Fahrtwind. Drastisch
-              reduzierter Stromverbrauch, ausfallsicher, wartungsarm.
-            </p>
           </div>
 
           <nav className="flex flex-wrap gap-x-10 gap-y-3">
